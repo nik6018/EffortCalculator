@@ -24,6 +24,12 @@ class EffortCalculatorTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+		
+		XCTAssert(Wage.calculateHours(withWage: 34, forItemPrice: 20) == 1)
+		XCTAssert(Wage.calculateHours(withWage: 0, forItemPrice: 20) == 0)
+		XCTAssert(Wage.calculateHours(withWage: 25, forItemPrice: 100) == 4)
+		XCTAssert(Wage.calculateHours(withWage: 50, forItemPrice: 20) == 1)
+		
     }
     
     func testPerformanceExample() {
